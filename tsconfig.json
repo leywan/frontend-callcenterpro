@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+
+  "compilerOptions": {
+    "baseUrl": "./src",  // ✅ Assure-toi que "src" est bien défini comme base
+    "paths": {
+      "@/*": ["./*"]  // ✅ Permet d'utiliser "@/lib/utils"
+    }
+  }
+}
